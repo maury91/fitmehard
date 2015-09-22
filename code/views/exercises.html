@@ -1,0 +1,31 @@
+<div
+    id="exercisesMenu"
+    class="fullscreenView menu"
+    data-role="view"
+    data-title="Esercizi"
+    data-layout="home-back-title"
+    data-model="APP.exercises"
+    data-before-show="APP.exercises.showed"
+    data-hide="APP.exercises.hide">
+    <div data-role="touch" data-bind="events : {tap : add}" class="button">Crea esercizio</div>
+    <ul id="exercisesList"></ul>
+</div>
+
+<div
+    id="exercisesNew"
+    class="fullscreenView menu"
+    data-role="view"
+    data-title="Nuovo Esercizio"
+    data-layout="home-back-title"
+    data-model="APP.exercises"
+    data-before-show="APP.exercises.showed"
+    data-hide="APP.exercises.hide">
+    <div class="form">
+        <h2>Nome</h2>
+        <input type="text" id="exerciseName" />
+        <h2>Movimenti</h2>
+        <input type="number" id="exerciseMovements" />
+        
+    </div>
+    <div data-role="touch" data-bind="events : {tap : record}" class="button">Registra movimenti</div>
+</div>

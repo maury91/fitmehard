@@ -1,0 +1,32 @@
+<div
+    class="fullscreenView calibrate"
+    id="excRecord"
+    data-title="Acquisizione Esercizio"
+    data-role="view"
+    data-layout="home-back-title-home"
+    data-before-show="APP.exc.showed"
+    data-hide="APP.exc.hide"
+    data-stretch="true">
+    
+    <div class="progress" id="excRecordProgress">
+        
+    </div>
+</div>
+<div
+    class="fullscreenView menu"
+    id="excSave"
+    data-role="view"
+    data-title="Testi Esercizio"
+    data-layout="home-title"
+    data-model="APP.exct"
+    data-before-show="APP.exct.showed">
+    
+    <div class="form">
+        <h1>Introduzione</h1>
+        <textarea id="exerciseIntro"></textarea>     
+    </div>
+    <div id="excMovements">
+        
+    </div>
+    <div data-role="touch" data-bind="events : {tap : save}" class="button">Salva Esercizio</div>
+</div>

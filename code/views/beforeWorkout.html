@@ -1,0 +1,16 @@
+<div
+    class="fullscreenView menu"
+    data-role="view"
+    data-title="Avvio Esercizio"
+    data-layout="home-back-title"
+    data-model="APP.startWorkout"
+    data-before-show="APP.startWorkout.showed">
+    <div class="form">
+        <h2>Serie</h2>
+        <input type="number" id="exerciseSeries" value="3" min="1" />
+        <h2>Ripetizioni</h2>
+        <input type="number" id="exerciseRipetizioni" value="12" min="1" />
+        
+    </div>
+    <div data-role="touch" data-bind="events : {tap : start}" class="button">Inizia</div>
+</div>

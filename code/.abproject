@@ -1,0 +1,53 @@
+{
+  "ProjectName": "FitMeHard",
+  "ProjectGuid": "13f21a9d-e8ba-49ac-8cdf-30da324c636b",
+  "projectVersion": 1,
+  "AppIdentifier": "com.appmasters.fitmehard",
+  "DisplayName": "FitMeHard",
+  "Author": "Appmasterss",
+  "Description": "",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.5.0",
+  "AndroidPermissions": [
+    "android.permission.WRITE_EXTERNAL_STORAGE"
+  ],
+  "DeviceOrientations": [
+    "Portrait"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{b5e13ace-7d0c-43d0-8516-6433610f0291}",
+  "WP8ProductID": "{d19afb7e-8182-4ce3-941c-00c02b0707dc}",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ],
+  "CorePlugins": [
+    "nl.x-services.plugins.actionsheet@1.1.1",
+    "org.apache.cordova.console",
+    "org.apache.cordova.device",
+    "org.apache.cordova.device-motion",
+    "org.apache.cordova.device-orientation",
+    "org.apache.cordova.file",
+    "nl.x-services.plugins.insomnia@4.0.1",
+    "com.ionic.keyboard@1.0.3",
+    "org.apache.cordova.media",
+    "org.apache.cordova.dialogs",
+    "org.apache.cordova.splashscreen",
+    "org.apache.cordova.statusbar",
+    "org.apache.cordova.vibration"
+  ]
+}

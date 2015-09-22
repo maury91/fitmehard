@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="fonts/fonts.css" rel="stylesheet" />
+    <link href="fonts/fitmehard.css" rel="stylesheet" />
+
+    
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="bower_components/d3/d3.min.js"></script>
+
+    <script src="scripts/math.min.js"></script>
+    
+    <script src="system/Memory.js"></script>
+    <script src="system/JSONHelper.js"></script>
+    <script src="system/persistence.js"></script>
+    
+    
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/calibrate.js"></script>
+    <script src="scripts/exercises.js"></script>
+    <script src="scripts/workout.js"></script>
+    
+    
+    
+
+</head>
+<body>
+ 
+  <div data-role="layout" data-id="home">
+      <div data-role="header">
+        <div class="back"></div>
+          <div data-role="navbar">
+            <a data-role="button" href="#appDrawer" id="showDrawe" data-rel="drawer" data-align="left" class="lines-button x2" ><span class="lines"></span></a>
+            <a data-role="touch" data-tap="toggleVolume" data-align="right" class="toggleVolume km-custom-volume-medium"></a>
+          </div>
+      </div>
+  </div>
+    
+  <div data-role="layout" data-id="home-back">
+      <div data-role="header">
+          <div data-role="navbar">
+            <a data-role="button" href="#:back" class="buttonBack" data-align="left" data-icon="custom-back">Indietro</a>
+            <a data-role="touch" data-tap="toggleVolume" data-align="right" class="toggleVolume km-custom-volume-medium"></a>
+          </div>
+      </div>
+  </div>
+    
+  <div data-role="layout" data-id="home-title">
+      <div data-role="header">
+          <div data-role="navbar">
+            <span data-role="view-title"></span>  
+            <a data-role="touch" data-tap="toggleVolume" data-align="right" class="toggleVolume km-custom-volume-medium"></a>
+          </div>
+      </div>
+  </div>
+    
+  <div data-role="layout" data-id="home-back-title">
+      <div data-role="header">
+          <div data-role="navbar">
+            <span data-role="view-title"></span>  
+            <a data-role="button" href="#:back" class="buttonBack" data-align="left" data-icon="custom-back">Indietro</a>
+            <a data-role="touch" data-tap="toggleVolume" data-align="right" class="toggleVolume km-custom-volume-medium"></a>
+          </div>
+      </div>
+  </div>
+    
+  <div data-role="layout" data-id="home-back-title-home">
+      <div data-role="header">
+          <div data-role="navbar">
+            <span data-role="view-title"></span>  
+            <a data-role="touch" data-tap="goHome" class="buttonBack km-custom-back" data-align="left"></a>
+            <a data-role="touch" data-tap="toggleVolume" data-align="right" class="toggleVolume km-custom-volume-medium"></a>
+          </div>
+      </div>
+  </div>
+    
+  <div data-role="layout" data-id="main">
+    <div data-role="header">
+      <div data-role="navbar">
+        <span data-role="view-title"></span>
+        <a data-role="button" href="#appDrawer" data-rel="drawer" data-align="left" data-icon="drawer-button"></a>
+      </div>
+    </div>
+
+    <!-- application views will be rendered here -->
+    
+  </div>
+
+  <!-- application drawer and contents -->
+  <div 
+      data-role="drawer" 
+      id="appDrawer" 
+      style="width: 80px" 
+      data-title="Navigation"
+      data-model="APP.drawer"
+      data-before-show="APP.drawer.beforeShow"
+      data-hide="APP.drawer.hide">
+    <ul>
+      <li>
+        <a data-role="touch" data-bind="events:{tap:toggleVibrate}" class="toggleVibrate km-custom-vibrate"></a>
+      </li>
+      <li>
+        <a data-role="touch" class="km-custom-graph"></a>
+      </li>
+      <li>
+        <a data-role="touch" class="km-custom-workout"></a>
+      </li>
+      <li>
+        <a data-role="touch" data-bind="events:{tap:goToExc}" class="km-custom-lab"></a>
+      </li>
+    </ul>
+  </div>       
+
+</body>
+</html>

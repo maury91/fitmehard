@@ -1,0 +1,573 @@
+/**** Kendo Overflow ***/
+.km-material, .km-material .km-header, .km-material .km-content, .km-material .km-pane, .km-material .km-scroll-header .km-group-title, .km-material input[type=password], .km-material input[type=search], .km-material input[type=number], .km-material input[type=tel], .km-material input[type=url], .km-material input[type=email], .km-material input[type=text]:not(.k-input), .km-root .km-material textarea {
+  background:transparent;
+}
+.km-material .km-navbar .km-view-title {
+    font-size: 2rem;
+    font-family: "Oswald";
+    line-height: 2.3em;
+}
+.menu .km-widget.km-navbar,.calibrate .km-widget.km-navbar {
+    margin-bottom: 1rem;
+    border-bottom:#444 1px solid;
+}
+.workout .km-widget.km-navbar {
+    margin-bottom: 1rem;
+}
+
+.km-drawer-button:before, .km-drawer-button:after  { content: "\E077"; }
+.km-header > .back {
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 14rem;
+    background: url(images/nigga.jpg) top center;
+    background-size: cover;
+    -webkit-filter: brightness(.7) saturate(.9);
+}
+.km-widget.km-navbar {
+    background: none;
+    color: #FFF;
+    font-size: 1.8rem;
+    box-shadow: none;
+    height: 4rem;
+    margin-bottom: -1.5rem;
+}
+.km-header a.km-widget.km-button {
+    margin: 0;
+    padding: 0;
+}
+.km-header .km-view-title.km-show-title.km-fill-title {
+    line-height: 3rem;
+}
+/*** Menu Views ***/
+.menu .button {
+    background: #7c3429;
+    color:#FFF;
+    margin:1rem;
+    font-size: 1.4rem;
+    padding: .7rem;
+    text-align: center;
+    font-family: "Lato";
+}
+.menu h1,.menu h2 {
+    font-family: "Oswald";  
+    color: #EEE;
+    font-size: 2.2rem;
+    margin: .4em 0 .1em .2em;
+}
+.menu h2 {
+    font-size: 1.7rem;
+}
+
+/*** Workout view ***/
+.workout .indicator {
+    /* float:left; */
+    width:33%;
+    height:100%;
+    position: absolute;
+    left: 0;
+}
+.workout .indicator:nth-child(2) {
+    left:33%;
+}
+.workout .indicator:nth-child(3) {
+    left:67%;
+}
+.workout .indicator > svg,.workout .indicator > .status {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    width: calc(100% - 2rem);
+    top: 0;
+    height: calc(100% - 5rem);
+}
+.workout .indicator > h2 {
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    color: #FFF;
+    font-family: "Oswald";
+    font-size: 2.3rem;
+}
+.workout .indicator > .status {
+    color: #FFF;
+    font-size: 3rem;
+    left: 50%;
+}
+#workoutTimeS > span:nth-child(1) {
+    border: none;
+    
+    top: -.55em;
+    bottom: auto;
+}
+.workout .indicator > .status > span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+.workout .indicator > .status > span:nth-child(1) {
+    border-bottom: 1px solid #444;
+    bottom: 100%;
+}
+.workout .indicator > .status > span:nth-child(2) {
+    top: 0;
+}
+/*** Exercises List ***/
+#exercisesList {
+    margin: 2rem 0;
+    
+    padding: 1rem;
+    color: #EEE;
+    font-family: "Lato";
+    font-size: 1.4rem;
+}
+#exercisesList > li {
+    display: block;
+    padding: 1rem;
+    text-transform: capitalize;
+    border-bottom: 1px solid #333;
+}
+#exercisesList > li > .title {
+    
+}
+/*** Forms ***/
+.menu .form {
+    margin-bottom: 4rem;
+}
+.menu .form > input[type="text"],.menu .form > input[type="number"],.menu .form > textarea {
+    border: 1px solid #444;
+    
+    outline: none;
+    background: #111;
+    width: calc(100% - 1rem);
+    box-sizing: border-box;
+    margin: 0 .5rem;
+    font-size: 1.5rem;
+    color: #EEE;
+}
+.menu .form > textarea {
+    height:7em;
+}
+.menu .form > input[type="text"]:focus,.menu .form > input[type="number"]:focus,.menu .form > textarea:focus {
+    color: #B62009;
+}
+/*** Shared ***/
+.button {
+    
+}
+.button.circle {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    transition:margin .4s 0 ease;
+    font-size: 7rem;
+}
+.button.circle:active {
+    margin: 0px -10px 0 0;
+}
+.button.circle>span {
+    font-size: 5rem;
+    
+    line-height: 8rem;
+    text-align: center;
+    width: 8rem;
+    display: block;
+}
+.fullscreenView {
+    background: url(images/gradient-home.png);
+}
+.km-header a.km-widget.km-button.buttonBack {
+    font-family: "oswald";
+    
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+/*** Drawer ***/
+#appDrawer {
+    color:#EEE;
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e9735e), color-stop(26%,#e9735e), color-stop(26%,#e56852), color-stop(100%,#f0aa73)); /* Chrome,Safari4+ */
+    background: linear-gradient(to top,  #214e4b 15%,#1f3f40 100%); /* W3C */
+
+}
+#appDrawer>div {
+    border-right:1px solid #222;
+}
+.toggleVolume {
+    /* margin-top: 1.2rem; */
+    
+    padding: 1.8rem.8rem;
+}
+#appDrawer ul {
+    margin: 0;
+    
+    padding: 0;
+    font-size: 4rem;
+}
+#appDrawer ul>li {
+    position: relative;
+    
+    text-align: center;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    width: 70px;
+    margin: auto;
+}
+#appDrawer ul>li>a {
+    padding: 0;
+    
+    margin: auto;
+    background: transparent;
+    color: #FAFAFA;
+    box-shadow: none;
+}
+#appDrawer ul>li:nth-last-child(1){
+    border-bottom:none;
+    }
+
+/*** Home ***/
+#home-view .km-content.km-stretched-view {
+    z-index: 2;
+    margin-top: 7.5rem;
+    color: #EEE;
+}
+#home-view .background {
+    background: url(images/gradient-home.png);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 3.5rem;
+    bottom: 0;
+    background-size: 100% 100%;
+}
+#start{
+    background: #7c3429;
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    box-shadow: 2px 1px 3px 0px #111;
+}
+#start>span{
+    margin-left: .2rem;
+}
+#home-view ul {
+    margin: 0;
+    
+    padding: 0;
+}
+#home-view ul>li {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 2rem;
+}
+#home-view ul>li div.bullet{
+    position: absolute;
+    
+    width: 2rem;
+    height: 2rem;
+    background: rgba(200,200,200,.6);
+    border-radius: 100%;
+    left: .5rem;
+}
+#home-view ul>li div.bullet>span{
+    display: block;
+    
+    width: .7rem;
+    height: .7rem;
+    background: #EEE;
+    border-radius: 100%;
+    margin: .66rem auto;
+}
+#home-view ul>li span.title{
+    position: absolute;
+    font-family:"oswald";
+    left: 3rem;
+    font-weight: bolder;
+}
+#home-view ul>li span.day{
+    position: absolute;
+    font-family:"lato";    
+    left: 3rem;
+    top: 1.2rem;
+}
+#home-view ul>li div.points {
+    position: absolute;
+    
+    left: 1.15rem;
+    width: .66rem;
+    height: 3rem;
+    top: -3rem;
+}
+#home-view ul>li div.points>span {
+    position: absolute;
+    background: #FFF;
+    opacity: .3;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    left: 3px;
+}
+#home-view ul>li div.points>span:nth-child(1) {
+    top: .5rem;
+}
+#home-view ul>li div.points>span:nth-child(2) {
+    top: 1.3rem;
+}
+#home-view ul>li div.points>span:nth-child(3) {
+    top: 2.1rem;
+}
+.km-rightitem {
+    right:0;
+}
+/* ====================== before calibrate ==================== */
+.beforeCalibrate .image {
+    position: absolute;
+    
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 40%;
+    overflow: hidden;
+}
+#video1 {
+    background: #000;
+  
+}
+.beforeCalibrate .image > .videoFrame {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.calibrate .description {
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+    right: 0;
+    top: 60%;
+    padding: 1rem;
+    color: #fff;
+    font-family: "Lato";
+    font-size: 1.3rem;
+    text-align: center;
+    box-sizing: border-box;
+}
+.beforeCalibrate .button {
+    position: absolute;
+    background: #9c3429;
+    bottom: 1.5rem;
+    height: 3rem;
+    right: 2rem;
+    left: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+    color: #FFF;
+    padding: .4rem;
+    font-family: "Lato";
+    width: auto;
+}
+/* ====================== calibrazione ======================== */
+.calibration {
+    position: absolute;
+    
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 4rem;
+    margin-top: -4rem;
+}
+.calibration > .center {
+    position: absolute;
+    left: 50%;
+    width: 3rem;
+    text-align: center;
+    margin-left: -1.5rem;
+    height: 6rem;
+    margin-top: -30px;
+}
+.calibration > .center > .up,.calibration > .center > .down {
+    color: #9c3429;
+    font-size: 2rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
+}
+.calibration > .center > .up {
+    bottom: 0;
+}
+.calibration > .center > .down {
+    top: 0;
+}
+.calibration > .roller {
+    position: absolute;
+    
+    left: 50%;
+    /* top: 10px; */
+}
+.calibration > .roller > .leftSide,.calibration > .roller > .rightSide{
+    position: absolute;
+    
+    height: 2rem;
+    width: 35rem;
+}
+.calibration > .roller > .centerSide {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #9c3429;
+    margin: -10px;
+    top: 14px;
+    transition:margin .5s,width .5s,height .5s,background 1s;
+}
+.calibration > .roller.ok > .centerSide {
+    background: #349c29;
+}
+.calibration > .roller > .leftSide {
+    right: 1.4rem;
+    
+    text-align: right;
+    /* margin-right: 1.4rem; */
+}
+.calibration > .roller > .rightSide {
+    
+    left: 1.4rem;
+}
+.calibration > .roller > .leftSide > span,.calibration > .roller > .rightSide > span {
+    width: 4px;
+    
+    height: 4px;
+    display: inline-block;
+    background: #CCC;
+    margin: .9rem .75rem;
+    border-radius: 100%;
+    /* opacity: .7; */
+}
+.calibrate h1 {
+    color:#EEE;
+    font-family: "Oswald";
+    font-size: 2.2rem;
+    text-align: center;
+}
+/* ====================== lines button ==================================================*/
+.lines-button {
+  padding: 2rem 1rem;
+  transition: .3s;
+  cursor: pointer;
+  user-select: none;
+  /* */
+}
+.lines-button:hover {
+  opacity: 1;
+}
+.lines-button:active {
+  transition: 0;
+}
+
+.lines {
+  display: inline-block;
+  width: 2rem;
+  height: 4px;
+  background: #eee;
+  transition: 0.3s;
+  position: relative;
+}
+.lines:before, .lines:after {
+  display: inline-block;
+  width: 2rem;
+  height: 4px;
+  background: #ecf0f1;
+  transition: 0.3s;
+  position: absolute;
+  left: 0;
+  content: '';
+  -webkit-transform-origin: 0.28571rem center;
+  transform-origin: 0.28571rem center;
+}
+.lines:before {
+  top: .6rem;
+}
+.lines:after {
+  top: -.6rem;
+}
+
+.lines-button:hover .lines:before {
+  top: .6rem;
+}
+.lines-button:hover .lines:after {
+  top: -.6rem;
+}
+
+.lines-button.close {
+  -webkit-transform: scale3d(0.8, 0.8, 0.8);
+  transform: scale3d(0.8, 0.8, 0.8);
+}
+
+.lines-button.minus.close .lines:before, .lines-button.minus.close .lines:after {
+  -webkit-transform: none;
+  transform: none;
+  top: 0;
+  width: 2rem;
+}
+
+.lines-button.x.close .lines {
+  background: transparent;
+}
+.lines-button.x.close .lines:before, .lines-button.x.close .lines:after {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  top: 0;
+  width: 2rem;
+}
+.lines-button.x.close .lines:before {
+  -webkit-transform: rotate3d(0, 0, 1, 45deg);
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+.lines-button.x.close .lines:after {
+  -webkit-transform: rotate3d(0, 0, 1, -45deg);
+  transform: rotate3d(0, 0, 1, -45deg);
+}
+
+.lines-button.x2 .lines {
+  transition: background 0.3s 0.5s ease;
+}
+.lines-button.x2 .lines:before, .lines-button.x2 .lines:after {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  transition: top 0.3s 0.6s ease, -webkit-transform 0.3s ease;
+  transition: top 0.3s 0.6s ease, transform 0.3s ease;
+}
+
+.lines-button.x2.close .lines {
+  transition: background 0.3s 0s ease;
+  background: transparent;
+}
+.lines-button.x2.close .lines:before, .lines-button.x2.close .lines:after {
+  transition: top 0.3s ease, -webkit-transform 0.3s 0.5s ease;
+  transition: top 0.3s ease, transform 0.3s 0.5s ease;
+  top: 0;
+  width: 2rem;
+}
+.lines-button.x2.close .lines:before {
+  -webkit-transform: rotate3d(0, 0, 1, 45deg);
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+.lines-button.x2.close .lines:after {
+  -webkit-transform: rotate3d(0, 0, 1, -45deg);
+  transform: rotate3d(0, 0, 1, -45deg);
+}
