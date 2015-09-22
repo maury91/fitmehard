@@ -28,19 +28,21 @@ For help the user with his goal, this app give these functions
 ### Make new exercises
 
 The coach can use the app to make new exercise, this is very simple.
-1) The coach tells the apps of how many movements the exercise is composed
-2) The coach make every movement with a little pause between them (manteining the position)
-3) The coach describe each movement with a set of phrases
+
+1. The coach tells the apps of how many movements the exercise is composed
+2. The coach make every movement with a little pause between them (manteining the position)
+3. The coach describe each movement with a set of phrases
 
 ### Execute a set of exercises
 
 The user can do the exercises maked by the coach, for every movement of the each excercise the app tells this things :
-1) How to do the movement (example : Raise your hands up)
-2) If the movement is incomplete the app tell the user how to complete, like "raise more"
-3) If the movement is exaggerated the app tell the user to come back, like "lower a little"
+
+1. How to do the movement (example : Raise your hands up)
+2. If the movement is incomplete the app tell the user how to complete, like "raise more"
+3. If the movement is exaggerated the app tell the user to come back, like "lower a little"
 
 Before the exercise start the application describe to the user how to take the first position.
 
-### Todos
+## Todos
 
  - Convert calibration to orthoganl normalization
