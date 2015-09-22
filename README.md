@@ -7,11 +7,12 @@ Even if isn't asked to the application to work correctly, the application can tr
 
 This application graphic, and the home is inspired by the application "Adidas MiCoach" for Windows Phone. As the other application, this application is designed to show in the home what you have to do today.
 
-## Related Documentation
+## Related Files
 
  - Youtube presentation (funny) : https://www.youtube.com/watch?v=eF0hZ-zJrBI
- - PowerPoint Presentation
+ - PowerPoint Presentation : https://github.com/maury91/fitmehard/blob/master/presentation/FitMeHard.pptx?raw=true
  - PowerPoint Presentation (youtube) : https://www.youtube.com/watch?v=YUo_8azWCzA
+ - Apk : https://github.com/maury91/fitmehard/blob/master/bin/fitmehard.apk?raw=true
 
 ## The Goal
 
@@ -48,6 +49,20 @@ The user can do the exercises maked by the coach, for every movement of the each
 
 Before the exercise start the application describe to the user how to take the first position.
 
-### Todos
+## Development
+
+This app was developed under Telerik Appbuilder (mainly for the help to build fo iOS (cause i don't have xcode or a mac))
+
+In the app i use the icon font maked using icomoon, the main part of the icon are made by me using inkscape. The others are from icomoon.
+All other graphical elements are made by editing existing images (downloaded from flaticon) with inkscape.
+
+The libraries i've used are :
+
+- Kendo UI for mobile
+- jQuery
+- D3.js
+- Math.js (for the mean and median functions)
+
+## Todos
 
  - Convert calibration to orthoganl normalization
