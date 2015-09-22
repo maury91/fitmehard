@@ -7,6 +7,11 @@ Even if isn't asked to the application to work correctly, the application can tr
 
 This application graphic, and the home is inspired by the application "Adidas MiCoach" for Windows Phone. As the other application, this application is designed to show in the home what you have to do today.
 
+## Related Documentation
+
+ - Youtube presentation (funny) : https://www.youtube.com/watch?v=eF0hZ-zJrBI
+ - PowerPoint Presentation
+ - PowerPoint Presentation (youtube) : https://www.youtube.com/watch?v=YUo_8azWCzA
 
 ## The Goal
 
@@ -43,6 +48,6 @@ The user can do the exercises maked by the coach, for every movement of the each
 
 Before the exercise start the application describe to the user how to take the first position.
 
-## Todos
+### Todos
 
  - Convert calibration to orthoganl normalization
