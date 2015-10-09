@@ -7,6 +7,18 @@ Even if isn't asked to the application to work correctly, the application can tr
 
 This application graphic, and the home is inspired by the application "Adidas MiCoach" for Windows Phone. As the other application, this application is designed to show in the home what you have to do today.
 
+## Screens
+
+### Calibration Phase
+
+![Calibration1](maury91.github.com/fitmehard/imgage/calibration1.png)
+![Calibration2](maury91.github.com/fitmehard/imgage/calibration2.png)
+![Calibration3](maury91.github.com/fitmehard/imgage/calibration3.png)
+
+### Workout Phase
+
+![Workout](maury91.github.com/fitmehard/imgage/workout.png)
+
 ## Related Files
 
  - Youtube presentation (funny) : https://www.youtube.com/watch?v=eF0hZ-zJrBI
