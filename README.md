@@ -11,13 +11,13 @@ This application graphic, and the home is inspired by the application "Adidas Mi
 
 ### Calibration Phase
 
-![Calibration1](maury91.github.com/fitmehard/imgage/calibration1.png)
-![Calibration2](maury91.github.com/fitmehard/imgage/calibration2.png)
-![Calibration3](maury91.github.com/fitmehard/imgage/calibration3.png)
+<img src="images/calibration1.png" width="200">
+<img src="images/calibration2.png" width="200">
+<img src="images/calibration3.png" width="200">
 
 ### Workout Phase
 
-![Workout](maury91.github.com/fitmehard/imgage/workout.png)
+<img src="images/workout.png" width="200">
 
 ## Related Files
 
